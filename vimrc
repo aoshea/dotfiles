@@ -1,6 +1,11 @@
-" Specify a dir for plugins
+set nocompatible
+
+" Specify a dir for plugin
 " - Avoid using stand Vim dir names like 'plugin'
 call plug#begin('~/.vim/plugged')
+
+" Git wrapper
+Plug 'tpope/vim-fugitive'
 
 " Make sure you use single quotes
 Plug 'dense-analysis/ale'
@@ -18,6 +23,9 @@ Plug 'Shougo/vimproc.vim'
 
 " Initialize plugin system
 call plug#end()
+
+" Turn on syntax highlighting
+syntax on
 
 " set theme
 colorscheme gruvbox
