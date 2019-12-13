@@ -24,6 +24,22 @@ Plug 'Shougo/vimproc.vim'
 " Initialize plugin system
 call plug#end()
 
+" Status line
+set laststatus=2
+set statusline=
+" git
+set statusline+=%#PmenuSel#
+set statusline+=%{FugitiveHead()}
+set statusline+=%#LineNr#
+" filepath
+set statusline+=\ %f
+set statusline+=%m
+set statusline+=%=
+" filetype
+set statusline+=\ %y
+" status line current line of total
+set statusline+=\ %l:%c
+
 " Turn on syntax highlighting
 syntax on
 
