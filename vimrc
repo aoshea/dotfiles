@@ -63,6 +63,6 @@ set shiftwidth=2
 " on pressing tab, insert 2 spaces
 set expandtab
 
-" Show line numbers in margin
-set number
+" Do not show line numbers in margin
+set nonumber
 
