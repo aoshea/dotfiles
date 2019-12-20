@@ -16,6 +16,10 @@ Plug 'morhetz/gruvbox'
 " Emmet for HTML
 Plug 'mattn/emmet-vim'
 
+" Javascript syntax highlighting
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+
 " Typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
