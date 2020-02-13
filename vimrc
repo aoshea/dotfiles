@@ -7,6 +7,13 @@ call plug#begin('~/.vim/plugged')
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 
+" fuzzy search 
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+
+" add, delete replace sandwiched textr
+Plug 'machakann/vim-sandwich'
+
 " Make sure you use single quotes
 Plug 'dense-analysis/ale'
 
@@ -50,10 +57,6 @@ syntax on
 " set theme
 colorscheme gruvbox
 set background=dark
-
-" Ctrl-P
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " eg. run prettier on save
 let g:ale_fix_on_save = 1
