@@ -1,4 +1,5 @@
 set nocompatible
+set mouse=a
 
 " Specify a dir for plugin
 " - Avoid using stand Vim dir names like 'plugin'
@@ -61,6 +62,9 @@ set background=dark
 " eg. run prettier on save
 let g:ale_fix_on_save = 1
 
+" editorconfig settings
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 " Tabs to spaces
 filetype plugin indent on
 " show existing tab with 2 spaces width
@@ -72,4 +76,7 @@ set expandtab
 
 " Do not show line numbers in margin
 set nonumber
+
+" map ctrl-p to Gfiles
+map <C-p> :GFiles<CR>
 
